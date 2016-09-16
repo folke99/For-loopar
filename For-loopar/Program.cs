@@ -76,41 +76,51 @@ namespace For_loopar
             Console.ReadKey();
             */
             //Övning 6
-            
-            Console.WriteLine("Mata in ett heltal:");
-            int heltal = int.Parse(Console.ReadLine());
-
-            if(heltal < 21)
-            { 
-            for (int i = 1; i < heltal; i++)
-            {
-
-                if (i % 3 == 0 && i % 7 == 0)
-                {
-                    Console.WriteLine(i);
-                }
-             
-            }
-
-            }
-            Console.ReadKey();
-            
-            //Övning 7
             /*
             Console.WriteLine("Mata in ett heltal:");
             int heltal = int.Parse(Console.ReadLine());
 
-            
-            for (int i = i + (i - 1); i < heltal; i++)
+            if (heltal > 21)
             {
+                for (int i = 1; i < heltal; i++)
+                {
 
-                int z = i + (i-1);
-              
-                
-                Console.WriteLine(i);
+                    if (i % 3 == 0 && i % 7 == 0)
+                    {
+                        Console.WriteLine(i);
+                    }
+
+                }
             }
+            else
+            {
+                Console.WriteLine("Inga tal machade");
+            }
+            
             Console.ReadKey();
             */
+            //Övning 7
+            
+            Console.WriteLine("Mata in ett heltal:");
+            int heltal = int.Parse(Console.ReadLine());
+
+
+            int z = 0;
+            int y = 1;
+           
+            
+            for (int i = 0; i < heltal; i++)
+            {
+                int temp = z;
+                z = y;
+                y = temp + y;
+
+
+                Console.Write("Fibonaccitalen blir: " + y);
+            }
+
+            Console.ReadKey();
+            
         }
     }
 }
