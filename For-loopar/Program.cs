@@ -107,16 +107,16 @@ namespace For_loopar
 
             int z = 0;
             int y = 1;
-           
-            
+
+            Console.Write("Fibbonacci blir: ");
             for (int i = 0; i < heltal; i++)
             {
-                int temp = z;
+                int nyttVärde = z;
                 z = y;
-                y = temp + y;
+                y = nyttVärde + y;
 
 
-                Console.Write("Fibonaccitalen blir: " + y);
+                Console.Write(y + " ");
             }
 
             Console.ReadKey();
