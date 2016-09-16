@@ -100,7 +100,7 @@ namespace For_loopar
             Console.ReadKey();
             */
             //Övning 7
-            
+            /*
             Console.WriteLine("Mata in ett heltal:");
             int heltal = int.Parse(Console.ReadLine());
 
@@ -120,7 +120,22 @@ namespace For_loopar
             }
 
             Console.ReadKey();
-            
+            */
+            //Övning 8
+            /*
+            Console.WriteLine("Mata in ett heltal:");
+            int heltal = int.Parse(Console.ReadLine());
+
+            for (double i = 0; i < heltal; i = i + 0.1)
+            {
+                if ( i * i * i >= heltal)
+                {
+                    Console.WriteLine(Math.Round(i,1));
+                    break;
+                }
+
+            }
+            Console.ReadKey();
         }
     }
 }
