@@ -136,6 +136,34 @@ namespace For_loopar
 
             }
             Console.ReadKey();
+            */
+            //Övning 9
+            /*
+            Console.WriteLine("Skriv in ett heltal");
+
+            double heltal = double.Parse(Console.ReadLine());
+
+            if (heltal == 1)
+            {
+                Console.WriteLine("Primtal!");
+            }
+
+            for (int i = 2; i < heltal; i++)
+            {
+                if ( heltal % i != 0)
+                {
+                    Console.WriteLine("Primtal!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Inte ett primtal");
+                    break;
+                }
+            }           
+            
+            Console.ReadKey();
+           */
         }
     }
 }
