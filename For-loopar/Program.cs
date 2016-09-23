@@ -138,32 +138,86 @@ namespace For_loopar
             Console.ReadKey();
             */
             //Övning 9
+
+            /*    if (heltal == 1)
+                    {
+                        Console.WriteLine("Primtal!");
+                    }
+
+                    bool primtal = true;
+
+                    for (int i = 2; i < heltal; i++)
+                    {
+                        if ( heltal % i == 0)
+                        {
+                            primtal = false;
+                            break;
+                        }
+                    }
+
+                    if (primtal)
+                    {
+                        Console.WriteLine("Primtal!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Inte ett primtal");
+                    }
+                */
             /*
-            Console.WriteLine("Skriv in ett heltal");
+            //Ovning 9 v2.0
 
-            double heltal = double.Parse(Console.ReadLine());
+        Console.WriteLine("Skriv in ett heltal");
 
-            if (heltal == 1)
-            {
-                Console.WriteLine("Primtal!");
-            }
+        int heltal = int.Parse(Console.ReadLine());
 
-            for (int i = 2; i < heltal; i++)
-            {
-                if ( heltal % i != 0)
-                {
-                    Console.WriteLine("Primtal!");
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Inte ett primtal");
-                    break;
-                }
-            }           
-            
-            Console.ReadKey();
-           */
+        if (ÄrPrimtal(heltal))
+        {
+            Console.WriteLine("Primtal!");
         }
+        else
+        {
+            Console.WriteLine("Inte ett primtal");
+        }
+
+        Console.ReadKey();
+
     }
+
+    public static bool ÄrPrimtal(int heltal)
+    {
+        if (heltal == 1)
+        {
+            return true;
+        }
+
+        for (int i = 2; i < heltal; i++)
+        {
+            if (heltal % i == 0)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+    */
+
+            Console.WriteLine("Skriv in ett tal MF:");
+
+            int tal = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < tal; i++)
+            {
+                if(tal % i = 0)
+                {
+
+                }
+
+            }
+        }
+
+
+    }
+
 }
